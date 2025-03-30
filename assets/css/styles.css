@@ -27,3 +27,87 @@ button {
   font-size: inherit;
   font-family: inherit;
 }
+
+.container {
+  width: 1169px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  --height: 56px;
+  --color: #ff5b2e;
+  display: inline-block;
+  min-width: 130px;
+  height: var(--height);
+  line-height: var(--height);
+  color: var(--color);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 31px;
+  border: 1px solid var(--color);
+  opacity: 0.6;
+}
+
+/* Header */
+.header {
+  padding-top: 18px;
+}
+
+.header-fixed {
+  position: sticky;
+  top: -18px;
+  z-index: 999;
+}
+
+.header-row {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .nav-list {
+  display: flex;
+}
+
+.header .nav-link,
+.header-cta .cta-signin {
+  padding: 8px 18px;
+  color: #5e6085;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.header .nav-link:hover {
+  color: #000958;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.header-cta .cta-signin:hover {
+  text-decoration: underline;
+}
+
+.header-cta .cta-signup {
+  --height: 50px;
+  min-width: 117px;
+  font-size: 1.4rem;
+  color: #000958;
+  font-weight: 600;
+  border-radius: 25px;
+  border-color: rgba(0, 9, 88, 0.7);
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.header-cta .cta-signup:hover {
+  color: #fff;
+  background-color: #000958;
+}
