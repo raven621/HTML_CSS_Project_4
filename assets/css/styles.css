@@ -9,6 +9,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+  background-color: #fffaf5;
 }
 
 h1,
@@ -52,12 +53,17 @@ a {
   font-weight: 500;
   border-radius: 31px;
   border: 1px solid var(--color);
-  opacity: 0.6;
+  transition: opacity 0.15s;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 /* Header */
 .header {
   padding-top: 18px;
+  background-color: #fffaf5;
 }
 
 .header-fixed {
@@ -110,4 +116,180 @@ a {
 .header-cta .cta-signup:hover {
   color: #fff;
   background-color: #000958;
+}
+
+/* Hero */
+.hero {
+  padding-top: 92px;
+}
+
+.hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-media {
+  position: relative;
+  width: 52.09%;
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.hero-media .img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 388px;
+  height: 488px;
+  background: #fe997b;
+  border-radius: 16px;
+  border: 3px solid #fff;
+}
+
+.hero-media .hero-img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.hero-media .decor-img {
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-media .decor-img.decor-right {
+  top: 18px;
+  right: -43px;
+}
+
+.hero-media .decor-img.decor-left {
+  left: -58px;
+  bottom: 10px;
+}
+
+.hero-media .img-wrap-small {
+  align-self: flex-end;
+  width: 186px;
+  height: 244px;
+  background: #faa7ad;
+  margin-left: -24px;
+  margin-bottom: -58px;
+  border: 2px solid #f9d7da;
+}
+
+.hero-media .hero-list {
+  position: absolute;
+  left: 128px;
+  bottom: 0;
+  padding: 0 14px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero-media .list-item {
+  padding: 18px 53px 18px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.hero-media .list-item:last-child {
+  border-bottom: none;
+}
+
+.hero-media .list-item .skeleton:nth-of-type(1),
+.hero-media .list-item .skeleton:nth-of-type(2) {
+  margin-top: 7px;
+  width: 118px;
+  height: 4px;
+  border-radius: 10px;
+  opacity: 0.08;
+  background: #000958;
+}
+
+.hero-media .list-item .skeleton:nth-of-type(2) {
+  margin-top: 6px;
+  width: 39px;
+}
+
+.hero-media .list-item .item-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 9px;
+}
+
+.hero-media .list-item:nth-child(1) .item-img {
+  background: #fdc03b;
+}
+
+.hero-media .list-item:nth-child(2) .item-img {
+  background: #b5d4f0;
+}
+
+.hero-content {
+  width: 44.225%;
+}
+
+.hero-content .heading {
+  color: #000958;
+  font-family: Sora;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.152; /* 115.152% */
+}
+
+.hero-content .desc {
+  margin-top: 24px;
+  width: 75.62%;
+  color: #656689;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.876; /* 187.5% */
+}
+
+.hero-content .hero-cta {
+  margin-top: 38px;
+}
+
+.hero-cta .cta-booking {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  --height: 60px;
+  min-width: 189px;
+  font-weight: 600;
+  background: var(--color);
+  color: #fff;
+  border-radius: 31px;
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.hero-cta .cta-booking .btn-icon {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.hero-cta .cta-call {
+  margin-left: 18px;
+  padding: 6px;
+  color: #000958;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1; /* 100% */
+  text-decoration: underline;
 }
