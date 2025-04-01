@@ -394,7 +394,7 @@ a {
 
 .about-content .tab-list {
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   column-gap: 56px;
 }
