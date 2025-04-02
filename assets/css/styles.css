@@ -1025,3 +1025,144 @@ a {
   .pricing-item-item:nth-child(7)::before {
   opacity: 0.4;
 }
+
+/* Review */
+.review {
+  padding: 105px 0 53px;
+}
+
+.review-inner {
+  display: flex;
+  align-items: center;
+  column-gap: 44px;
+}
+
+.review-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  outline: none;
+  border: 1.5px solid #ffd1c4;
+  background: transparent;
+  color: #ff5b2e;
+  cursor: pointer;
+}
+
+.review-control:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.review-control:hover {
+  color: #fff;
+  background: #ff5b2e;
+  border-color: #ff5b2e;
+  box-shadow: 0px 5px 27px 0px #ff5b2e4d;
+}
+
+.review-content {
+  overflow: hidden;
+}
+
+.review-list {
+  display: flex;
+}
+
+.review-item {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 115px;
+}
+
+.review-item-media {
+  margin-top: -52px;
+  flex-shrink: 0;
+  position: relative;
+  width: 274px;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 137px;
+  overflow: hidden;
+}
+
+.review-item-media::after {
+  position: absolute;
+  inset: auto 0 0 0;
+  content: " ";
+  height: 82%;
+  background: #ffda54;
+  border-radius: 137px;
+}
+
+.review-item-img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.review-item-content {
+  margin-top: 28px;
+}
+
+.review-item-quote {
+  margin-top: 24px;
+  width: 553px;
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 1.56; /* 155.556% */
+}
+
+.review-item-author {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 34px;
+  color: #282828;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+}
+
+.review-item-author::before {
+  display: inline-block;
+  margin-right: 8px;
+  content: " ";
+  width: 20px;
+  height: 2.1px;
+  border-radius: 999px;
+  background: #000;
+}
+
+.review-dots {
+  margin-top: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.review-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  border: 1px solid #ff5b2e;
+  background: transparent;
+  cursor: pointer;
+}
+
+.review-dot:hover {
+  background: #ff5b2e;
+}
+
+.review-dot.active {
+  width: 24px;
+  background: #ff5b2e;
+  cursor: default;
+}
