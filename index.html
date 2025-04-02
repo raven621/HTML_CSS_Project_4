@@ -661,6 +661,154 @@
           </div>
         </div>
       </section>
+      <!-- Pricing -->
+      <section class="pricing">
+        <div class="container">
+          <section class="pricing-top">
+            <h2 class="section-heading">The Best Choice</h2>
+            <p class="section-desc pricing-top-desc">
+              We offer long-term and short-term boarding. Every dog has its own
+              private, spacious room and daily individual time in our large play
+              yard.
+            </p>
+          </section>
+          <!-- Switch -->
+          <div class="pricing-switch-wrap">
+            <div class="pricing-switch-inner">
+              <input
+                type="checkbox"
+                name=""
+                id="pricing-switch"
+                class="pricing-switch"
+                hidden
+                onclick="changePack()"
+              />
+              <label for="pricing-switch" class="pricing-label">
+                <span class="pricing-swith-value">Monthly</span>
+                <span class="pricing-swith-value">Yearly</span>
+              </label>
+              <img
+                src="./assets/images/pricing-sale-off.svg"
+                alt=""
+                class="pricing-switch-img"
+              />
+            </div>
+          </div>
+          <!-- List -->
+          <!-- Monthly -->
+          <div class="pricing-list pricing-list-inactive">
+            <!-- Item 1 -->
+            <article class="pricing-item">
+              <p class="pricing-item-type">Basic</p>
+              <h3 class="pricing-item-heading">Day care</h3>
+              <span class="pricing-item-price">$15</span>
+              <button class="btn pricing-item-btn">Purchase Now</button>
+              <ul class="pricing-item-list">
+                <li class="pricing-item-item">Single room</li>
+                <li class="pricing-item-item">Socialist Exercise</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Spa and Grooming</li>
+                <li class="pricing-item-item">Excercise 2x</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Grooming 2x</li>
+              </ul>
+            </article>
+            <!-- Item 2 -->
+            <article class="pricing-item active">
+              <p class="pricing-item-type">Exclusive</p>
+              <h3 class="pricing-item-heading">2X Care</h3>
+              <span class="pricing-item-price">$19.99</span>
+              <button class="btn pricing-item-btn active">Purchase Now</button>
+              <ul class="pricing-item-list">
+                <li class="pricing-item-item">Single room</li>
+                <li class="pricing-item-item">Socialist Exercise</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Spa and Grooming</li>
+                <li class="pricing-item-item">Excercise 2x</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Grooming 2x</li>
+              </ul>
+            </article>
+            <!-- Item 3 -->
+            <article class="pricing-item">
+              <p class="pricing-item-type">Platinum</p>
+              <h3 class="pricing-item-heading">4X Care</h3>
+              <span class="pricing-item-price">$29.99</span>
+              <button class="btn pricing-item-btn">Purchase Now</button>
+              <ul class="pricing-item-list">
+                <li class="pricing-item-item">Single room</li>
+                <li class="pricing-item-item">Socialist Exercise</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Spa and Grooming</li>
+                <li class="pricing-item-item">Excercise 2x</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Grooming 2x</li>
+              </ul>
+            </article>
+          </div>
+          <!-- Yearly -->
+          <div class="pricing-list">
+            <!-- Item 1 -->
+            <article class="pricing-item">
+              <p class="pricing-item-type">Basic</p>
+              <h3 class="pricing-item-heading">Day care</h3>
+              <span class="pricing-item-price">$150</span>
+              <button class="btn pricing-item-btn">Purchase Now</button>
+              <ul class="pricing-item-list">
+                <li class="pricing-item-item">Single room</li>
+                <li class="pricing-item-item">Socialist Exercise</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Spa and Grooming</li>
+                <li class="pricing-item-item">Excercise 2x</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Grooming 2x</li>
+              </ul>
+            </article>
+            <!-- Item 2 -->
+            <article class="pricing-item active">
+              <p class="pricing-item-type">Exclusive</p>
+              <h3 class="pricing-item-heading">2X Care</h3>
+              <span class="pricing-item-price">$199</span>
+              <button class="btn pricing-item-btn active">Purchase Now</button>
+              <ul class="pricing-item-list">
+                <li class="pricing-item-item">Single room</li>
+                <li class="pricing-item-item">Socialist Exercise</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Spa and Grooming</li>
+                <li class="pricing-item-item">Excercise 2x</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Grooming 2x</li>
+              </ul>
+            </article>
+            <!-- Item 3 -->
+            <article class="pricing-item">
+              <p class="pricing-item-type">Platinum</p>
+              <h3 class="pricing-item-heading">4X Care</h3>
+              <span class="pricing-item-price">$299</span>
+              <button class="btn pricing-item-btn">Purchase Now</button>
+              <ul class="pricing-item-list">
+                <li class="pricing-item-item">Single room</li>
+                <li class="pricing-item-item">Socialist Exercise</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Spa and Grooming</li>
+                <li class="pricing-item-item">Excercise 2x</li>
+                <li class="pricing-item-item">Custom Meals</li>
+                <li class="pricing-item-item">Grooming 2x</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
+    <script>
+      function changePack() {
+        const checkBox = document.getElementById("pricing-switch");
+        const [monthlyPack, yearPack] =
+          document.getElementsByClassName("pricing-list");
+        const hiddenClass = "pricing-list-inactive";
+        monthlyPack.classList.toggle(hiddenClass, checkBox.checked);
+        yearPack.classList.toggle(hiddenClass, !checkBox.checked);
+      }
+    </script>
   </body>
 </html>
