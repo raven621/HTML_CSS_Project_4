@@ -123,7 +123,8 @@ a {
   transition: color 0.3s, text-shadow 0.3s;
 }
 
-.header .nav-link:hover {
+.header .nav-link:hover,
+.header .nav-link.active {
   color: #000958;
   text-shadow: 1px 0 0 currentColor;
 }
@@ -1253,4 +1254,136 @@ a {
 .blog-item-desc {
   margin-top: 16px;
   line-height: 1.71; /* 171.429% */
+}
+
+/* Footer */
+.footer {
+  margin-top: 81px;
+  background: linear-gradient(to right, #fff6ed 42%, transparent 42%);
+}
+
+.footer-inner {
+  display: flex;
+}
+
+.footer-left {
+  width: 41.06%;
+  padding: 114px 0 148px;
+}
+
+.footer-left .email-form {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 268px;
+  height: 46px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 91, 46, 0.25);
+  background: #fff;
+}
+
+.footer-left .email-form-input {
+  padding: 0 22px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: inherit;
+}
+
+.footer-left .email-form-input:placeholder-shown {
+  padding: 16px 0 16px 22px;
+  color: #656689;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.167; /* 116.667% */
+}
+
+.footer-left .email-form-btn {
+  margin-right: -1px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: none;
+  outline: none;
+  background: #ff5b2e;
+  color: #fff;
+}
+
+.footer-left .email-form-btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.footer-heading {
+  color: #000958;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.11; /* 111.111% */
+}
+
+.footer-left .footer-heading {
+  margin-top: 68px;
+}
+
+.footer-left .social-list {
+  display: flex;
+  column-gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-left .social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.footer-left .social-item:hover {
+  opacity: 0.9;
+}
+
+.footer-right {
+  flex: 1;
+  padding: 52px 0 48px;
+}
+
+.footer-right-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 58px;
+  padding-left: 129px;
+  padding-right: 37px;
+}
+
+.footer-list {
+  margin-top: 14px;
+}
+
+.footer-link {
+  line-height: 2;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-item span.footer-link {
+  text-decoration: none;
+}
+
+.copy-right {
+  font-size: 1.2rem;
+  line-height: 1.167; /* 116.667% */
+  margin-top: 52px;
+  margin-left: 22px;
 }
